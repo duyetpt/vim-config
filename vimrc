@@ -33,7 +33,7 @@ set mouse=a
 " Encoding
 set encoding=utf-8
 set termencoding=utf-8
-set fileencodings=utf-8,gb2312
+set fileencodings=utf-8,cp949
 
 " File formats
 set fileformats=unix,dos,mac
@@ -221,7 +221,7 @@ autocmd FileType sh nmap <F9> :w<cr>:!clear && sh %<cr>
 " Make
 autocmd FileType c,cpp imap <F5> <esc>:w<cr>:copen<cr>:make<cr>
 autocmd FileType c,cpp nmap <F5> :w<cr>:copen<cr>:make<cr>
-"autocmd QuickFixCmdPost * :copen
+" autocmd QuickFixCmdPost * :copen
 
 " filetype settings
 let g:tex_flavor = 'latex'
