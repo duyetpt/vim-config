@@ -11,17 +11,26 @@
 ``` bash
 # For Debian/Ubuntu
 sudo apt-get install xsel exuberant-ctags ack-grep libclang-dev
+
 ```
 
 ## Installation
 
   1. Install the dependencies
-  2. Run the install.sh
+  2. cd ~/; mkdir dev; cd dev
+  3. git clone "https://github.com/indianajohn/vim_config/"
+  4. cd vim_config
+  4. ./install.sh
 
 ``` bash
 # For Debian/Ubuntu
 sudo apt-get install xsel exuberant-ctags ack-grep libclang-dev
-sh install.sh
+cd ~/
+mkdir dev
+cd dev
+git clone 'https://github.com/indianajohn/vim-config/'
+cd vim-config
+./install.sh
 ```
 
 ## Plugins
