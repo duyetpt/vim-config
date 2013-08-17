@@ -44,5 +44,9 @@ autocmd FileType tex let g:AutoPairs = {'(':')', '[':']', '{':'}', "`":"'"}
 let g:UltiSnipsExpandTrigger = '<c-j>'
 let g:UltiSnipsSnippetsDir = '~/.vim/bundle/ultisnips/UltiSnips'
 
+" Clang settings
 let g:clang_complete_auto = 0
 let g:clang_auto_select = 0
+
+" YouCompleteMe settings
+let g:ycm_confirm_extra_conf = 0
