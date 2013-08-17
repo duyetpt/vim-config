@@ -20,18 +20,24 @@ sudo apt-get install xsel exuberant-ctags ack-grep libclang-dev
   2. cd ~/; mkdir dev; cd dev
   3. git clone 'https://github.com/indianajohn/vim-config/'
   4. cd vim_config
-  4. ./install.sh
+  5. ./install.sh
+  6. Build the C++ portion of YouCompleteMe (see https://github.com/Valloric/YouCompleteMe)
 
 ``` bash
-# For Debian/Ubuntu
-sudo apt-get install xsel exuberant-ctags ack-grep libclang-dev
+# For Ubuntu 12.04 LTS
+sudo sh -c 'deb http://llvm.org/apt/precise/ llvm-toolchain-precise main" > /etc/apt/sources.list.d/ros-latest.list'
+wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|sudo apt-key add -
+sudo apt-get install xsel exuberant-ctags ack-grep clang-3.4 clang-3.4-doc libclang-common-3.4-dev libclang-3.4-dev libclang1-3.4 libllvm-3.4-ocaml-dev libllvm3.4 lldb-3.4 llvm-3.4 llvm-3.4-dev llvm-3.4-doc llvm-3.4-examples llvm-3.4-runtime cpp11-migrate-3.4 clang-format-3.4 
 cd ~/
 mkdir dev
 cd dev
 git clone 'https://github.com/indianajohn/vim-config/'
 cd vim-config
 ./install.sh
-```
+mkdir -p ~/dev/ycm_build
+cd ~/dev/ycm_build
+cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=/usr/lib/llvm-3.4 . ~/.vim/bundle/YouCompleteMe/cpp
+make ycm_core
 
 ## Plugins
 
@@ -52,6 +58,7 @@ cd vim-config
   15. [Ultisnips](https://github.com/SirVer/ultisnips) -This is an implementation of TextMates Snippets for the Vim Text Editor.
   16. [sudo.vim](https://github.com/vim-scripts/sudo.vim) -Allows one to edit a file with privileges from an unprivileged session
   17. [a.vim](https://github.com/vim-scripts/a.vim) -Alternate Files quickly (.c --> .h etc)
+  18. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Very good auto-completion.
 
 ## Shortcuts
 

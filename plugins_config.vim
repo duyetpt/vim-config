@@ -31,6 +31,8 @@ let g:syntastic_auto_loc_list = 1
 autocmd FileType tex let g:syntastic_quiet_warnings=1
 let g:syntastic_c_config_file = '.clang_complete'
 let g:syntastic_cpp_config_file = '.clang_complete'
+let g:syntastic_cpp_remove_include_errors = 1
+let g:syntastic_c_remove_include_errors = 1
 
 
 " Auto-Pairs settings
@@ -42,3 +44,5 @@ autocmd FileType tex let g:AutoPairs = {'(':')', '[':']', '{':'}', "`":"'"}
 let g:UltiSnipsExpandTrigger = '<c-j>'
 let g:UltiSnipsSnippetsDir = '~/.vim/bundle/ultisnips/UltiSnips'
 
+let g:clang_complete_auto = 0
+let g:clang_auto_select = 0

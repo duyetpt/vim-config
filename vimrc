@@ -189,6 +189,12 @@ vnoremap > >gv
 " Copy content to clipboard
 vnoremap <c-c> y:call CopyToClipboard()<cr>
 
+" Make shift-insert work like in Xterm
+map <S-Insert> <MiddleMouse>
+map! <S-Insert> <MiddleMouse>
+map <c-v> <MiddleMouse>
+map! <c-v> <MiddleMouse>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                 Autocmd, Helper Functions                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -261,3 +267,4 @@ except:
     vim.command('echohl None')
 EOF
 endfunction
+
