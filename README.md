@@ -38,7 +38,7 @@ mkdir -p ~/dev/ycm_build
 cd ~/dev/ycm_build
 cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=/usr/lib/llvm-3.4 . ~/.vim/bundle/YouCompleteMe/cpp
 make ycm_core
-
+'''
 ## Plugins
 
   1. [Vundle](https://github.com/gmarik/vundle) -The plug-in manager for Vim
