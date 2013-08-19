@@ -52,11 +52,10 @@ make ycm_core
   11. [Vim-unimpaired](https://github.com/tpope/vim-unimpaired) -unimpaired.vim: pairs of handy bracket mappings
   12. [Nerdcommenter](https://github.com/scrooloose/nerdcommenter) -Vim plugin for intensely orgasmic commenting
   13. [Auto-pairs](https://github.com/jiangmiao/auto-pairs) -Vim plugin, insert or delete brackets, parens, quotes in pair
-  14. [Clang_complete](https://github.com/Rip-Rip/clang_complete) -Vim plugin that use clang for completing C/C++ code.
-  15. [Ultisnips](https://github.com/SirVer/ultisnips) -This is an implementation of TextMates Snippets for the Vim Text Editor.
-  16. [sudo.vim](https://github.com/vim-scripts/sudo.vim) -Allows one to edit a file with privileges from an unprivileged session
-  17. [a.vim](https://github.com/vim-scripts/a.vim) -Alternate Files quickly (.c --> .h etc)
-  18. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Very good auto-completion.
+  14. [Ultisnips](https://github.com/SirVer/ultisnips) -This is an implementation of TextMates Snippets for the Vim Text Editor.
+  15. [sudo.vim](https://github.com/vim-scripts/sudo.vim) -Allows one to edit a file with privileges from an unprivileged session
+  16. [a.vim](https://github.com/vim-scripts/a.vim) -Alternate Files quickly (.c --> .h etc)
+  17. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Very good auto-completion.
 
 ## Shortcuts
 
