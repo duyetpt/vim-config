@@ -8,29 +8,26 @@
   2. [exuberant-ctags](http://ctags.sourceforge.net/)
   3. [ack-grep](http://betterthangrep.com/)
 
-``` bash
-# For Debian/Ubuntu
-sudo apt-get install xsel exuberant-ctags ack-grep libclang-dev
-
-```
-
 ## Installation
 
-  1. Install the dependencies
-  2. cd ~/; mkdir dev; cd dev
-  3. git clone 'https://github.com/indianajohn/vim-config/'
-  4. cd vim_config
-  5. ./install.sh
-  6. Build the C++ portion of YouCompleteMe (see https://github.com/Valloric/YouCompleteMe)
+  1. Install the dependencies.
+  2. Install vim from source a-la https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+  3. cd ~/; mkdir dev; cd dev
+  4. git clone 'https://github.com/indianajohn/vim-config/'
+  5. cd vim_config
+  6. ./install.sh
+  7. Build the C++ portion of YouCompleteMe (see https://github.com/Valloric/YouCompleteMe )
 
 ``` bash
-# For Ubuntu 12.04 LTS
+# For Ubuntu 12.04 LTS on AMD 64
 sudo sh -c 'deb http://llvm.org/apt/precise/ llvm-toolchain-precise main" > /etc/apt/sources.list.d/ros-latest.list'
 wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|sudo apt-key add -
 sudo apt-get install xsel exuberant-ctags ack-grep clang-3.4 clang-3.4-doc libclang-common-3.4-dev libclang-3.4-dev libclang1-3.4 libllvm-3.4-ocaml-dev libllvm3.4 lldb-3.4 llvm-3.4 llvm-3.4-dev llvm-3.4-doc llvm-3.4-examples llvm-3.4-runtime cpp11-migrate-3.4 clang-format-3.4 
 cd ~/
 mkdir dev
 cd dev
+sudo apt-get install gdebi
+sudo gdebi vim-custom
 git clone 'https://github.com/indianajohn/vim-config/'
 cd vim-config
 ./install.sh
