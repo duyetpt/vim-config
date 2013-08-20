@@ -20,16 +20,17 @@
 
 ``` bash
 # For Ubuntu 12.04 LTS on AMD 64
-sudo sh -c 'deb http://llvm.org/apt/precise/ llvm-toolchain-precise main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo sh -c 'echo "deb http://llvm.org/apt/precise/ llvm-toolchain-precise main" > /etc/apt/sources.list.d/ros-latest.list'
 wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|sudo apt-key add -
-sudo apt-get install xsel exuberant-ctags ack-grep clang-3.4 clang-3.4-doc libclang-common-3.4-dev libclang-3.4-dev libclang1-3.4 libllvm-3.4-ocaml-dev libllvm3.4 lldb-3.4 llvm-3.4 llvm-3.4-dev llvm-3.4-doc llvm-3.4-examples llvm-3.4-runtime cpp11-migrate-3.4 clang-format-3.4 
+sudo apt-get update
+sudo apt-get install xsel exuberant-ctags ack-grep clang-3.4 clang-3.4-doc libclang-common-3.4-dev libclang-3.4-dev libclang1-3.4 libllvm-3.4-ocaml-dev libllvm3.4 lldb-3.4 llvm-3.4 llvm-3.4-dev llvm-3.4-doc llvm-3.4-examples llvm-3.4-runtime cpp11-migrate-3.4 clang-format-3.4 gdebi
 cd ~/
 mkdir dev
 cd dev
-sudo apt-get install gdebi
-sudo gdebi vim-custom
+sudo apt-get remove vim vim-tiny vim-gnome vim-common vim-gui-common
 git clone 'https://github.com/indianajohn/vim-config/'
-cd vim-config
+cd ~/dev/vim-config
+sudo gdebi vim-custom.deb
 ./install.sh
 mkdir -p ~/dev/ycm_build
 cd ~/dev/ycm_build
