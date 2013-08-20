@@ -31,6 +31,7 @@ sudo apt-get remove vim vim-tiny vim-gnome vim-common vim-gui-common
 git clone 'https://github.com/indianajohn/vim-config/'
 cd ~/dev/vim-config
 sudo gdebi vim-custom.deb
+ln -s /usr/bin/vim /usr/bin/gvim
 ./install.sh
 mkdir -p ~/dev/ycm_build
 cd ~/dev/ycm_build
