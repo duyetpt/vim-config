@@ -20,10 +20,8 @@
 
 ``` bash
 # For Ubuntu 12.04 LTS on AMD 64
-sudo sh -c 'echo "deb http://llvm.org/apt/precise/ llvm-toolchain-precise main" > /etc/apt/sources.list.d/ros-latest.list'
-wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|sudo apt-key add -
 sudo apt-get update
-sudo apt-get install xsel exuberant-ctags ack-grep clang-3.4 clang-3.4-doc libclang-common-3.4-dev libclang-3.4-dev libclang1-3.4 libllvm-3.4-ocaml-dev libllvm3.4 lldb-3.4 llvm-3.4 llvm-3.4-dev llvm-3.4-doc llvm-3.4-examples llvm-3.4-runtime cpp11-migrate-3.4 clang-format-3.4 gdebi
+sudo apt-get install xsel exuberant-ctags ack-grep gdebi
 cd ~/
 mkdir dev
 cd dev
@@ -33,10 +31,8 @@ cd ~/dev/vim-config
 sudo gdebi vim-custom.deb
 ln -s /usr/bin/vim /usr/bin/gvim
 ./install.sh
-mkdir -p ~/dev/ycm_build
-cd ~/dev/ycm_build
-cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=/usr/lib/llvm-3.4 . ~/.vim/bundle/YouCompleteMe/cpp
-make ycm_core
+cd ~/.vim/bundle/YouCompleteMe/
+./install.sh --clang-completer
 ```
 
 ## Plugins
