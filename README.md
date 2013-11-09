@@ -21,7 +21,7 @@
 ``` bash
 # For Ubuntu 12.04 LTS on AMD 64
 sudo apt-get update
-sudo apt-get install xsel exuberant-ctags ack-grep gdebi
+sudo apt-get install xsel exuberant-ctags ack-grep gdebi python-dev cmake git
 cd ~/
 mkdir dev
 cd dev

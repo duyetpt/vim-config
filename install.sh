@@ -11,6 +11,7 @@ git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 cp vimrc ~/.vimrc
 cp plugins.vim ~/.vim/
 cp plugins_config.vim ~/.vim
+cp .ycm_extra_conf.py ~/.vim/
 
 vim -c ":BundleInstall" -c "qa"
 

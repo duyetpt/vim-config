@@ -46,3 +46,4 @@ let g:UltiSnipsSnippetsDir = '~/.vim/bundle/ultisnips/UltiSnips'
 
 " YouCompleteMe settings
 let g:ycm_confirm_extra_conf = 0
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
