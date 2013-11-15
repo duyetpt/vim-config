@@ -39,21 +39,17 @@ cd ~/.vim/bundle/YouCompleteMe/
 
   1. [Vundle](https://github.com/gmarik/vundle) -The plug-in manager for Vim
   2. [Molokai](https://github.com/tomasr/molokai) -Molokai color scheme for Vim
-  3. [Vim-powerline](https://github.com/Lokaltog/vim-powerline) -The ultimate statusline/prompt utility.
-  4. [GoldenView.Vim](https://github.com/zhaocai/GoldenView.Vim) -Always have a nice view for vim split windows!
-  5. [PrettyGuides](https://github.com/adonis0147/prettyGuides) -Indent guides - displaying indent levels by vertical lines for Vim editor
-  6. [Ack.vim](https://github.com/mileszs/ack.vim) -Vim plugin for the Perl module / CLI script 'ack'
-  7. [Vim-easymotion](https://github.com/Lokaltog/vim-easymotion) -Vim motions on speed!
-  8. [Nerdtree](https://github.com/scrooloose/nerdtree) -A tree explorer plugin for vim
-  9. [Tagbar](https://github.com/majutsushi/tagbar) -Vim plugin that displays tags in a window, ordered by class etc
-  10. [Syntastic](https://github.com/scrooloose/syntastic) -Syntax checking hacks for vim
-  11. [Vim-unimpaired](https://github.com/tpope/vim-unimpaired) -unimpaired.vim: pairs of handy bracket mappings
-  12. [Nerdcommenter](https://github.com/scrooloose/nerdcommenter) -Vim plugin for intensely orgasmic commenting
-  13. [Auto-pairs](https://github.com/jiangmiao/auto-pairs) -Vim plugin, insert or delete brackets, parens, quotes in pair
-  14. [Ultisnips](https://github.com/SirVer/ultisnips) -This is an implementation of TextMates Snippets for the Vim Text Editor.
-  15. [sudo.vim](https://github.com/vim-scripts/sudo.vim) -Allows one to edit a file with privileges from an unprivileged session
-  16. [a.vim](https://github.com/vim-scripts/a.vim) -Alternate Files quickly (.c --> .h etc)
-  17. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Very good auto-completion.
+  3. [PrettyGuides](https://github.com/adonis0147/prettyGuides) -Indent guides - displaying indent levels by vertical lines for Vim editor
+  4. [Ack.vim](https://github.com/mileszs/ack.vim) -Vim plugin for the Perl module / CLI script 'ack'
+  5. [Vim-easymotion](https://github.com/Lokaltog/vim-easymotion) -Vim motions on speed!
+  6. [Nerdtree](https://github.com/scrooloose/nerdtree) -A tree explorer plugin for vim
+  7. [Tagbar](https://github.com/majutsushi/tagbar) -Vim plugin that displays tags in a window, ordered by class etc
+  8. [Syntastic](https://github.com/scrooloose/syntastic) -Syntax checking hacks for vim
+  9. [Nerdcommenter](https://github.com/scrooloose/nerdcommenter) -Vim plugin for intensely orgasmic commenting
+  10. [Ultisnips](https://github.com/SirVer/ultisnips) -This is an implementation of TextMates Snippets for the Vim Text Editor.
+  11. [sudo.vim](https://github.com/vim-scripts/sudo.vim) -Allows one to edit a file with privileges from an unprivileged session
+  12. [a.vim](https://github.com/vim-scripts/a.vim) -Alternate Files quickly (.c --> .h etc)
+  13. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Very good auto-completion.
 
 ## Shortcuts
 
@@ -81,8 +77,6 @@ cd ~/.vim/bundle/YouCompleteMe/
     2. Edit the command
     3. Press `enter`
   - `ctrl-j`  ==> UltiSnipsExpandTrigger
-  - `,s`    ==> GoldenViewSwitchMain
-  - `,S`    ==> GoldenViewSwitchToggle
 
 ## Plugins Management
 
