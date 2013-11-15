@@ -7,6 +7,13 @@
   1. [xsel](http://www.kfish.org/software/xsel/)
   2. [exuberant-ctags](http://ctags.sourceforge.net/)
   3. [ack-grep](http://betterthangrep.com/)
+  4. [CMake](http://cmake.org/)
+  5. [Git](http://git-scm.com/)
+  6. [Python](http://python.org/)
+  7. Vim version 7.3.584 or later with python support.  A Ubuntu 12.04 package is included in this repository, since the respective package is too old.
+  8. A basic C++ compilation environment including GNU compilers, often included in package distributions like "build-essential" in Debian-based distributions.
+
+
 
 ## Installation
 
@@ -21,7 +28,7 @@
 ``` bash
 # For Ubuntu 12.04 LTS on AMD 64
 sudo apt-get update
-sudo apt-get install xsel exuberant-ctags ack-grep gdebi python-dev cmake git
+sudo apt-get install xsel exuberant-ctags ack-grep gdebi python-dev cmake git build-essential python-dev
 cd ~/
 mkdir dev
 cd dev
@@ -31,8 +38,6 @@ cd ~/dev/vim-config
 sudo gdebi vim-custom.deb
 ln -s /usr/bin/vim /usr/bin/gvim
 ./install.sh
-cd ~/.vim/bundle/YouCompleteMe/
-./install.sh --clang-completer
 ```
 
 ## Plugins
