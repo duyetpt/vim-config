@@ -28,7 +28,7 @@
 ``` bash
 # For Ubuntu 12.04 LTS on AMD 64
 sudo apt-get update
-sudo apt-get install xsel exuberant-ctags ack-grep gdebi python-dev cmake git build-essential python-dev
+sudo apt-get install xsel exuberant-ctags ack-grep gdebi python-dev cmake git build-essential python-dev pyflakes
 cd ~/
 mkdir dev
 cd dev
@@ -42,19 +42,19 @@ ln -s /usr/bin/vim /usr/bin/gvim
 
 ## Plugins
 
-  1. [Vundle](https://github.com/gmarik/vundle) -The plug-in manager for Vim
-  2. [Molokai](https://github.com/tomasr/molokai) -Molokai color scheme for Vim
-  3. [PrettyGuides](https://github.com/adonis0147/prettyGuides) -Indent guides - displaying indent levels by vertical lines for Vim editor
+  1. [Vundle](https://github.com/gmarik/vundle) - The plug-in manager for Vim
+  2. [Molokai](https://github.com/tomasr/molokai) - Molokai color scheme for Vim
+  3. [PrettyGuides](https://github.com/adonis0147/prettyGuides) - Indent guides - displaying indent levels by vertical lines for Vim editor
   4. [Ack.vim](https://github.com/mileszs/ack.vim) -Vim plugin for the Perl module / CLI script 'ack'
-  5. [Vim-easymotion](https://github.com/Lokaltog/vim-easymotion) -Vim motions on speed!
-  6. [Nerdtree](https://github.com/scrooloose/nerdtree) -A tree explorer plugin for vim
-  7. [Tagbar](https://github.com/majutsushi/tagbar) -Vim plugin that displays tags in a window, ordered by class etc
+  5. [Vim-easymotion](https://github.com/Lokaltog/vim-easymotion) - Allows for quick movement
+  6. [Nerdtree](https://github.com/scrooloose/nerdtree) - A tree explorer plugin for vim
+  7. [Tagbar](https://github.com/majutsushi/tagbar) - Vim plugin that displays tags in a window, ordered by class etc
   8. [Syntastic](https://github.com/scrooloose/syntastic) -Syntax checking hacks for vim
-  9. [Nerdcommenter](https://github.com/scrooloose/nerdcommenter) -Vim plugin for intensely orgasmic commenting
-  10. [Ultisnips](https://github.com/SirVer/ultisnips) -This is an implementation of TextMates Snippets for the Vim Text Editor.
-  11. [sudo.vim](https://github.com/vim-scripts/sudo.vim) -Allows one to edit a file with privileges from an unprivileged session
-  12. [a.vim](https://github.com/vim-scripts/a.vim) -Alternate Files quickly (.c --> .h etc)
-  13. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Very good auto-completion.
+  9. [Nerdcommenter](https://github.com/scrooloose/nerdcommenter) - Automation for commenting.
+  10. [Ultisnips](https://github.com/SirVer/ultisnips) - This is an implementation of TextMates Snippets for the Vim Text Editor
+  11. [sudo.vim](https://github.com/vim-scripts/sudo.vim) - Allows one to edit a file with privileges from an unprivileged session
+  12. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Very good auto-completion.
+  13. [vim-airline](https://github.com/bling/vim-airline) - Good statusline with no configuration needed.
 
 ## Shortcuts
 

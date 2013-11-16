@@ -90,7 +90,6 @@ defaultsc = [
         '-Wno-long-long',
         '-Wno-variadic-macros',
         '-pthread'
-        '-msse3'
         '-std=c99',
         ]
 defaultscpp = [
@@ -98,7 +97,6 @@ defaultscpp = [
         '-Wno-long-long',
         '-Wno-variadic-macros',
         '-pthread'
-        '-msse3'
         '-std=c++11',
         ]
 
@@ -143,9 +141,8 @@ def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):
 def FlagsForFile( filename ):
     # Search through all parent directories for a directory named 'build'
     databases = []
-    path_focus = filename
+    path_focus = os.path.dirname(filename)
     while len(path_focus) > 1:
-        path_focus = os.path.dirname(os.path.dirname(path_focus))
         for f in os.listdir(path_focus):
             if f == 'build':
                 compilation_database_folder = path_focus + "/" + f
@@ -153,12 +150,24 @@ def FlagsForFile( filename ):
                     for files in f:
                         if files == 'compile_commands.json':
                             databases += [ycm_core.CompilationDatabase( r )]
+        path_focus = os.path.dirname(os.path.dirname(path_focus))
 
     # Use a header's source file database for completion.
+    filetype_flags = []
     if filename.endswith(".h"):
-        filename = filename.replace(".h",".cpp")
+        for f in os.listdir(os.path.dirname(filename)):
+            if filename.replace(".h",".cpp").find(f) != -1:
+                filename = filename.replace(".h",".cpp")
+                break
+            if filename.replace(".h",".c").find(f) != -1:
+                filename = filename.replace(".h",".cpp")
+                break
     elif filename.endswith(".hpp"):
         filename = filename.replace(".h",".cpp")
+        for f in os.listdir(os.path.dirname(filename)):
+            if filename.replace(".h",".c").find(f) != -1:
+                filename = filename.replace(".h",".cpp")
+                break
 
     # Get the compile commands
     final_flags = []
@@ -180,6 +189,9 @@ def FlagsForFile( filename ):
             final_flags = defaultsc
         elif filename.endswith(".cpp"):
             final_flags = defaultscpp
+
+    # This allows header files to be parsed according to their parent source
+    final_flags = filetype_flags + final_flags
 
     # For things that must be included regardless:
     final_flags += entered_flags

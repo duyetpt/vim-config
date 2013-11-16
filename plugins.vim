@@ -20,5 +20,6 @@ Bundle 'SirVer/ultisnips'
 Bundle 'sudo.vim'
 Bundle 'a.vim'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'bling/vim-airline'
 
 filetype plugin indent on
