@@ -55,6 +55,8 @@ set history=700
 
 " Undo
 set undolevels=700
+" Ignore filenames
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.a,*.o,*.so.*
 
 " Don't redraw while executing macros
 "set lazyredraw

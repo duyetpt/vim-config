@@ -55,6 +55,7 @@ ln -s /usr/bin/vim /usr/bin/gvim
   11. [sudo.vim](https://github.com/vim-scripts/sudo.vim) - Allows one to edit a file with privileges from an unprivileged session
   12. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Very good auto-completion.
   13. [vim-airline](https://github.com/bling/vim-airline) - Good statusline with no configuration needed.
+  14. [vim-fugitive](https://github.com/tpope/vim-fugitive) - Git integration
 
 ## Shortcuts
 

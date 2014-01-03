@@ -21,5 +21,7 @@ Bundle 'sudo.vim'
 Bundle 'a.vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'bling/vim-airline'
+Bundle 'tpope/vim-fugitive'
+Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on
