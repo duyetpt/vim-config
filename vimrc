@@ -16,6 +16,10 @@ endtry
 " Automatically source the .vimrc when it is saved
 autocmd! bufwritepost .vimrc source %
 
+" Show both relative and absolute line numbers.
+set relativenumber
+set number
+
 " Not compatible with vi
 set nocompatible
 
