@@ -231,13 +231,14 @@ autocmd FileType sh imap <F9> <esc>:w<cr>:!clear && sh %<cr>
 autocmd FileType sh nmap <F9> :w<cr>:!clear && sh %<cr>
 
 " Make
-autocmd FileType c,cpp imap <F5> <esc>:w<cr>:copen<cr>:make<cr>
-autocmd FileType c,cpp nmap <F5> :w<cr>:copen<cr>:make<cr>
+autocmd FileType c,cpp,tex imap <F5> <esc>:w<cr>:copen<cr>:make<cr>
+autocmd FileType c,cpp,tex nmap <F5> :w<cr>:copen<cr>:make<cr>
 " autocmd QuickFixCmdPost * :copen
 
 " filetype settings
 let g:tex_flavor = 'latex'
 autocmd bufread,bufnewfile *.md :set filetype=markdown
+au BufRead,BufNewFile *.txt,*.tex set wrap linebreak nolist textwidth=0 wrapmargin=0 spell spelllang=en_us
 
 " Delete trailing white space on save, useful for Python
 function! DeleteTrailingWS()
