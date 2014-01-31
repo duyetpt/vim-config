@@ -15,7 +15,7 @@ nnoremap <F4> :TagbarToggle<cr>
 
 " Syntastic settings
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_quiet_warnings=1
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:syntastic_c_config_file = '.clang_complete'
 let g:syntastic_cpp_config_file = '.clang_complete'
 let g:syntastic_cpp_remove_include_errors = 1

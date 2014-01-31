@@ -26,6 +26,16 @@ set nocompatible
 " Automatically read a file when it is changed from the outside
 set autoread
 
+" leave 3 lines between cursor and screen edge when scrolling
+set scrolloff=3
+
+" Rebind for leaving insert mode
+inoremap jj <ESC>
+
+" have semicolon default to colon in normal and visual mode
+nnoremap ; :
+vnoremap ; :
+
 " No backup files
 set nobackup
 set nowritebackup
