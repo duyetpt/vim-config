@@ -150,23 +150,7 @@ def FlagsForFile( filename ):
                     for files in f:
                         if files == 'compile_commands.json':
                             databases += [ycm_core.CompilationDatabase( r )]
-        path_focus = os.path.dirname(os.path.dirname(path_focus))
-
-    # Use a header's source file database for completion.
-    filetype_flags = []
-    if filename.endswith(".h"):
-        for f in os.listdir(os.path.dirname(filename)):
-            if filename.replace(".h",".cpp").find(f) != -1:
-                filename = filename.replace(".h",".cpp")
-                break
-            if filename.replace(".h",".c").find(f) != -1:
-                filename = filename.replace(".h",".c")
-                break
-    elif filename.endswith(".hpp"):
-        for f in os.listdir(os.path.dirname(filename)):
-            if filename.replace(".hpp",".cpp").find(f) != -1:
-                filename = filename.replace(".hpp",".cpp")
-                break
+        path_focus = os.path.dirname(path_focus)
 
     # Get the compile commands
     final_flags = []
@@ -188,9 +172,6 @@ def FlagsForFile( filename ):
             final_flags = defaultsc
         elif filename.endswith(".cpp"):
             final_flags = defaultscpp
-
-    # This allows header files to be parsed according to their parent source
-    final_flags = filetype_flags + final_flags
 
     # For things that must be included regardless:
     final_flags += entered_flags

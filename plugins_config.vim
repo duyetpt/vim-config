@@ -13,14 +13,6 @@ let NERDTreeIgnore=['.o$[[file]]', '.class$[[file]]', '.git$[[dir]]']
 " Tagbar settings
 nnoremap <F4> :TagbarToggle<cr>
 
-" Syntastic settings
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_quiet_messages = {'level': 'warnings'}
-let g:syntastic_c_config_file = '.clang_complete'
-let g:syntastic_cpp_config_file = '.clang_complete'
-let g:syntastic_cpp_remove_include_errors = 1
-let g:syntastic_c_remove_include_errors = 1
-
 " UltiSnips settings
 let g:UltiSnipsExpandTrigger = '<c-j>'
 let g:UltiSnipsSnippetsDir = '~/.vim/bundle/ultisnips/UltiSnips'
@@ -28,6 +20,7 @@ let g:UltiSnipsSnippetsDir = '~/.vim/bundle/ultisnips/UltiSnips'
 " YouCompleteMe settings
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_collect_identifiers_from_tags_files = 0
 
 " ctrlp settings
 nnoremap <leader>f :CtrlP<cr>
