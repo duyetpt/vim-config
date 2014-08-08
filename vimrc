@@ -26,6 +26,12 @@ set nocompatible
 " Automatically read a file when it is changed from the outside
 set autoread
 
+set nocursorline
+
+set nocursorcolumn
+
+syntax sync minlines=256
+
 " leave 3 lines between cursor and screen edge when scrolling
 set scrolloff=3
 
@@ -65,10 +71,10 @@ set pastetoggle=<F2>
 "set clipboard=unnamedplus
 
 " History
-set history=700
+set history=50
 
 " Undo
-set undolevels=700
+set undolevels=50
 " Ignore filenames
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.a,*.o,*.so.*
 
