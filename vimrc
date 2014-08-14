@@ -30,7 +30,6 @@ set nocursorline
 
 set nocursorcolumn
 
-syntax sync minlines=256
 
 " leave 3 lines between cursor and screen edge when scrolling
 set scrolloff=3
@@ -105,9 +104,10 @@ set matchtime=0
 
 " Enable syntax highlighting
 syntax on
+syntax sync minlines=256
 
 " Set colors
-set t_Co=256
+" set t_Co=256
 
 " colorscheme
 try
