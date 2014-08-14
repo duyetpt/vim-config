@@ -26,6 +26,18 @@
   7. Build the C++ portion of YouCompleteMe (see https://github.com/Valloric/YouCompleteMe )
 
 ``` bash
+# For Ubuntu 14.04 LTS on AMD 64 or Debian Testing (And probably others)
+sudo apt-get update
+sudo apt-get install xsel exuberant-ctags ack-grep gdebi python-dev cmake git build-essential python-dev pyflakes vim-gnome
+cd ~/
+mkdir dev
+cd dev
+git clone 'https://github.com/indianajohn/vim-config/'
+cd ~/dev/vim-config
+./install.sh
+```
+
+``` bash
 # For Ubuntu 12.04 LTS on AMD 64
 sudo apt-get update
 sudo apt-get install xsel exuberant-ctags ack-grep gdebi python-dev cmake git build-essential python-dev pyflakes
