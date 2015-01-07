@@ -73,12 +73,14 @@ set pastetoggle=<F2>
 set history=50
 
 " Undo
-set undolevels=50
+" set undolevels=50
 " Ignore filenames
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.a,*.o,*.so.*
 
 " Don't redraw while executing macros
-"set lazyredraw
+set ttyfast
+set lazyredraw
+set ttyscroll=3
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                      User Interface                      "
@@ -103,8 +105,11 @@ set showmatch
 set matchtime=0
 
 " Enable syntax highlighting
+" syntax off
 syntax on
-syntax sync minlines=256
+syntax sync minlines=200
+set synmaxcol=120
+set regexpengine=1
 
 " Set colors
 " set t_Co=256
