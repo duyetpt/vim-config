@@ -89,15 +89,15 @@ defaultsc = [
         'gcc',
         '-Wno-long-long',
         '-Wno-variadic-macros',
-        '-pthread'
-        '-std=c99',
+        '-pthread',
+        '-std=c99'
         ]
 defaultscpp = [
         'c++',
         '-Wno-long-long',
         '-Wno-variadic-macros',
-        '-pthread'
-        '-std=c++11',
+        '-pthread',
+        '-std=c++11'
         ]
 
 # Things that must be included.
