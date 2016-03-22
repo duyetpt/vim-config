@@ -24,5 +24,9 @@ cd ~/.vim/bundle/a.vim/plugin
 mv a.vim a.vim.bak
 sed '/imap/, +d' a.vim.bak > a.vim
 cd ~/.vim/bundle/YouCompleteMe
-python install.py --clang-completer --system-libclang
+if [[ "$unamestr" == 'Linux' ]]; then
+    python install.py --clang-completer
+else
+    python install.py --clang-completer --system-libclang
+fi
 cd ~/.vim/
