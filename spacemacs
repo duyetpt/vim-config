@@ -261,6 +261,11 @@ you should place your code here."
     ;; Enable flycheck (syntastic equiv).
     (global-flycheck-mode)
     (set-variable 'flycheck-display-errors-delay 0.4)
+    (defun my-c++-mode-hook ()
+    (setq c-basic-offset 4)
+        (c-set-offset 'substatement-open 0))
+    (add-hook 'c++-mode-hook 'my-c++-mode-hook)
+    (add-hook 'c-mode-common-hook 'my-c++-mode-hook)
   )
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
