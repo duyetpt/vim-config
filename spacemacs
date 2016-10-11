@@ -254,9 +254,9 @@ you should place your code here."
 
     (set-variable
     'ycmd-server-command
-    '("python" "/Users/john/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd/"))
-    (set-variable 'ycmd-extra-conf-whitelist '("/Users/john/*"))
-    (set-variable 'ycmd-global-config "/Users/john/.vim/.ycm_extra_conf.py")
+    '("python" "USER_HOME_TO_SUBSTITUTE/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd/"))
+    (set-variable 'ycmd-extra-conf-whitelist '("USER_HOME_TO_SUBSTITUTE/*"))
+    (set-variable 'ycmd-global-config "USER_HOME_TO_SUBSTITUTE/.vim/.ycm_extra_conf.py")
     ;; Enable flycheck (syntastic equiv).
     (global-flycheck-mode)
     (set-variable 'flycheck-display-errors-delay 0.4)
