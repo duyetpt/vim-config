@@ -11,7 +11,12 @@ git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 cp vimrc ~/.vimrc
 cp spacemacs ~/.spacemacs
-sed -i "s|USER_HOME_TO_SUBSTITUTE|$HOME|g" ~/.spacemacs
+unamestr=`uname`
+if [ $unamestr == 'Darwin' ]; then
+   sed -i "" "s|USER_HOME_TO_SUBSTITUTE|$HOME|g" ~/.spacemacs
+else
+    sed -i "s|USER_HOME_TO_SUBSTITUTE|$HOME|g" ~/.spacemacs
+fi
 cp plugins.vim ~/.vim/
 cp plugins_config.vim ~/.vim
 if [ "$(uname)" == "Darwin" ]; then
