@@ -29,7 +29,7 @@
 # For MacOSX / Spacemacs
 # Brew and Python through Brew if you haven't already
 npm install -g tern js-beautify eslint jshint standard
-pip2 install pyflakes
+pip2 install pyflakes flake8 pylint
 ```
 
 ``` bash
