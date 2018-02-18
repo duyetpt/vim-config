@@ -18,12 +18,14 @@ values."
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
-     python
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
+     python
+     javascript
+     ruby
      auto-completion
      ycmd
      ;; better-defaults
@@ -109,7 +111,7 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
+   dotspacemacs-default-font '("Menlo"
                                :size 13
                                :weight normal
                                :width normal
@@ -255,9 +257,9 @@ you should place your code here."
 
     (set-variable
     'ycmd-server-command
-    '("python" "/Users/john/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd/"))
-    (set-variable 'ycmd-extra-conf-whitelist '("/Users/john/*"))
-    (set-variable 'ycmd-global-config "/Users/john/.vim/.ycm_extra_conf.py")
+    '("/usr/bin/python" "USER_HOME_TO_SUBSTITUTE/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd/"))
+    (set-variable 'ycmd-extra-conf-whitelist '("USER_HOME_TO_SUBSTITUTE/*"))
+    (set-variable 'ycmd-global-config "USER_HOME_TO_SUBSTITUTE/.vim/.ycm_extra_conf.py")
     ;; Enable flycheck (syntastic equiv).
     (global-flycheck-mode)
     (set-variable 'flycheck-display-errors-delay 0.4)
