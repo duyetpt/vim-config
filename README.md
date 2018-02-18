@@ -25,6 +25,13 @@
   6. ./install.sh
   7. Build the C++ portion of YouCompleteMe (see https://github.com/Valloric/YouCompleteMe )
 
+```
+# For MacOSX / Spacemacs
+# Brew and Python through Brew if you haven't already
+npm install -g tern js-beautify eslint
+pip2 install pyflakes
+```
+
 ``` bash
 # For Ubuntu 14.04 LTS on AMD 64 or Debian Testing (And probably others)
 sudo apt-get update
