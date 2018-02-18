@@ -11,6 +11,7 @@ values."
    ;; `+distribution'. For now available distributions are `spacemacs-base'
    ;; or `spacemacs'. (default 'spacemacs)
    dotspacemacs-distribution 'spacemacs
+   js-basic-offset 2
    ;; List of additional paths where to look for configuration layers.
    ;; Paths must have a trailing slash (i.e. `~/.mycontribs/')
    dotspacemacs-configuration-layer-path '()
@@ -246,6 +247,9 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (setq js2-include-node-externs t)
+  (setq indent-tabs-mode nil)
+  (setq  javascript-indent-level 2) 
+  (setq js-indent-level 2)
   )
 
 (defun dotspacemacs/user-config ()
