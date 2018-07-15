@@ -259,6 +259,7 @@ values."
   (setq-default css-indent-offset n) ; css-mode
   (setq-default tab-width n)
   (setq-default c-basic-offset n)
+  (c-set-offset 'arglist-intro (* 2 n))
   (c-set-offset 'substatement-open 0)
   )
 
