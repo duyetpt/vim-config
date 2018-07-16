@@ -299,7 +299,7 @@ you should place your code here."
     (add-hook 'c++-mode-hook 'my-c++-mode-hook)
     (add-hook 'js2-mode-hook 'flow-js2-mode)
     (add-hook 'c-mode-common-hook 'my-c++-mode-hook)
-    (eval-after-load 'company
+    (with-eval-after-load 'company
       (add-to-list 'company-backends 'company-flow))
   )
 ;; Do not write anything past this comment. This is where Emacs will
