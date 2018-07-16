@@ -48,7 +48,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(company-flow)
+   dotspacemacs-additional-packages '(company-flow flow-js2-mode)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages
    '(google-c-style smartparens)
@@ -297,6 +297,7 @@ you should place your code here."
      (my-setup-indent 2)
      )
     (add-hook 'c++-mode-hook 'my-c++-mode-hook)
+    (add-hook 'js2-mode-hook 'flow-js2-mode)
     (add-hook 'c-mode-common-hook 'my-c++-mode-hook)
     (eval-after-load 'company
       (add-to-list 'company-backends 'company-flow))
