@@ -48,7 +48,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(company-flow flow-js2-mode)
+   dotspacemacs-additional-packages '(company-flow)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages
    '(google-c-style smartparens)
@@ -284,7 +284,7 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-
+ 
     (set-variable
     'ycmd-server-command
     '("/usr/bin/python" "USER_HOME_TO_SUBSTITUTE/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd/"))
@@ -292,6 +292,8 @@ you should place your code here."
     (set-variable 'ycmd-global-config "USER_HOME_TO_SUBSTITUTE/.vim/.ycm_extra_conf.py")
     ;; Enable flycheck (syntastic equiv).
     (global-flycheck-mode)
+    # ctrl-P for searching files
+    (define-key evil-normal-state-map (kbd "C-p") 'helm-projectile)
     (set-variable 'flycheck-display-errors-delay 0.4)
     (defun my-c++-mode-hook ()
      (my-setup-indent 2)
