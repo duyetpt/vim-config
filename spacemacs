@@ -290,7 +290,7 @@ you should place your code here."
     '("/usr/bin/python" "USER_HOME_TO_SUBSTITUTE/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd/"))
     (set-variable 'ycmd-extra-conf-whitelist '("USER_HOME_TO_SUBSTITUTE/*"))
     (set-variable 'ycmd-global-config "USER_HOME_TO_SUBSTITUTE/.vim/.ycm_extra_conf.py")
-    # ctrl-P for searching files
+    ;; ctrl-P for searching files
     (define-key evil-normal-state-map (kbd "C-p") 'helm-projectile)
     ;; Enable flycheck (syntastic equiv).
     (global-flycheck-mode)
