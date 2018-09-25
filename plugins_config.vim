@@ -10,13 +10,6 @@ nnoremap <leader>a :Ack -i <C-R><C-W>
 nnoremap <F3> :NERDTreeToggle<cr>
 let NERDTreeIgnore=['.o$[[file]]', '.class$[[file]]', '.git$[[dir]]']
 
-" Tagbar settings
-nnoremap <F4> :TagbarToggle<cr>
-
-" UltiSnips settings
-let g:UltiSnipsExpandTrigger = '<c-j>'
-let g:UltiSnipsSnippetsDir = '~/.vim/bundle/ultisnips/UltiSnips'
-
 " YouCompleteMe settings
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'

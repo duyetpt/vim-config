@@ -9,7 +9,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'tomasr/molokai'
 Bundle 'mileszs/ack.vim'
-Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'bling/vim-airline'

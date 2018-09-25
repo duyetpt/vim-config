@@ -37,11 +37,10 @@ sudo apt-get install xsel exuberant-ctags ack-grep gdebi python-dev cmake git bu
   1. [Vundle](https://github.com/gmarik/vundle) - The plug-in manager for Vim
   2. [Molokai](https://github.com/tomasr/molokai) - Molokai color scheme for Vim
   3. [Ack.vim](https://github.com/mileszs/ack.vim) -Vim plugin for the Perl module / CLI script 'ack'
-  4. [Vim-easymotion](https://github.com/Lokaltog/vim-easymotion) - Allows for quick movement
-  5. [Nerdtree](https://github.com/scrooloose/nerdtree) - A tree explorer plugin for vim
-  6. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Very good auto-completion.
-  7. [vim-airline](https://github.com/bling/vim-airline) - Good statusline with no configuration needed.
-  8. [ctrl-p](https://github.com/kien/ctrlp.vim) - Find files easily.
+  4. [Nerdtree](https://github.com/scrooloose/nerdtree) - A tree explorer plugin for vim
+  5. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Very good auto-completion.
+  6. [vim-airline](https://github.com/bling/vim-airline) - Good statusline with no configuration needed.
+  7. [ctrl-p](https://github.com/kien/ctrlp.vim) - Find files easily.
 
 ## Shortcuts
 
