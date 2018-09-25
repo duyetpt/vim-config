@@ -284,22 +284,21 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
- 
+
     (set-variable
     'ycmd-server-command
     '("/usr/bin/python" "USER_HOME_TO_SUBSTITUTE/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd/"))
     (set-variable 'ycmd-extra-conf-whitelist '("USER_HOME_TO_SUBSTITUTE/*"))
     (set-variable 'ycmd-global-config "USER_HOME_TO_SUBSTITUTE/.vim/.ycm_extra_conf.py")
-    ;; Enable flycheck (syntastic equiv).
-    (global-flycheck-mode)
     # ctrl-P for searching files
     (define-key evil-normal-state-map (kbd "C-p") 'helm-projectile)
+    ;; Enable flycheck (syntastic equiv).
+    (global-flycheck-mode)
     (set-variable 'flycheck-display-errors-delay 0.4)
     (defun my-c++-mode-hook ()
      (my-setup-indent 2)
      )
     (add-hook 'c++-mode-hook 'my-c++-mode-hook)
-    (add-hook 'js2-mode-hook 'flow-js2-mode)
     (add-hook 'c-mode-common-hook 'my-c++-mode-hook)
     (with-eval-after-load 'company
       (add-to-list 'company-backends 'company-flow))
