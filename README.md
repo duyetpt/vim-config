@@ -29,7 +29,7 @@ pip2 install pyflakes flake8 pylint
 ## Dependencies on Debian-alikes
 ``` bash
 sudo apt-get update
-sudo apt-get install xsel exuberant-ctags ack-grep gdebi python-dev cmake git build-essential python-dev pyflakes vim-gnome
+sudo apt-get install python-dev cmake git build-essential python-dev pyflakes vim
 ```
 
 ## Plugins
