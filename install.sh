@@ -6,6 +6,7 @@ mkdir backup
 mv ~/.vim ./backup/vim
 mv ~/.vimrc ./backup/vimrc
 mv ~/.spacemacs ./backup/spacemacs
+cp -rf ./.doom.d/ ~/.doom.d/ 
 
 git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
